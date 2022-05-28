@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="Game - Mania.html"><img src=img/logo.png height=218px width=540p></a>
+    </header>
+    
+    <form>
+    <h3>Login</h3><br>
+    <input type="text" placeholder="Login" id="login">
+    <input type="password" placeholder="Senha" id="senha">
+    <input type="submit" onclick="logar()">
+    </form>
+
+    <script>
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "usuario" && senha == "senha"){
+                alert('logado com sucesso');
+            }else{
+                alert('Usuário ou senha incorretos')
+            } 
+        }
+    </script>
+
+</body>
+</html>
